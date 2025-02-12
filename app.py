@@ -5,6 +5,8 @@ from keras import backend as K
 app = Flask(__name__)
 
 import pickle
+
+
 with open('emb_mat','rb') as pickle_file:
 	emb_mat = pickle.load(pickle_file)
 
