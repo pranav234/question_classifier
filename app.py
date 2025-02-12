@@ -15,7 +15,7 @@ def text_to_array(text):
     empyt_emb = np.zeros(300)
     text = text[:-1].split()[:30]
     embeds = [emb_mat.get(x, empyt_emb) for x in text]
-    embeds+= [empyt_emb] * (30 - len(embeds))
+    embeds += [empyt_emb] * (30 - len(embeds))
     return np.array(embeds)
 
 
